@@ -54,8 +54,7 @@ const cookiesString = `next-auth.csrf-token=49c2b6bbd3e0bc97fdcb1b5d3b487d592470
 const nexTauthCookie =
   "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..LiOdDm8ZrD1F0EYw.ptumWjzWXqHaM7NcPa9B4XFusPEqKYbobP-PzQqxfWFmLLp5OhumHvGrt7sgzTV3QPAxEbXfFkJXgHqEqoDox97C_T4UWYGsAFmvYjlf6xMoK0e8mY1xQeuSFIGObFkvJSFKspWWUoT88317rjQXkEmS21Pbw3t6OVDTRCZYgmgIqdh91-m_fSIe3TjVLeMMG0UnC00riV3im2B6Vt2CpWx5WIY-JZ20_Opo4vtGtpS9anW24lvsJARltgrPNaI42lwCBqOpD9rYaSEjR5heidHVf-gBAhLNN9RPFlEGEm6iyYgWjXhUP350mjpooL81ENs941h96gUYe8fRnOpSGt55xoN2sW9XXGIP77ozBmEvPCTC14cx7-Y1Yf-NcJW6rLNLLf9fXeV4x4PSySOdKQY4IfqjsoL3IQPZfi4.Em20cExmjST8kM1Iixr3Fg";
 
-const url = 'https://staging.lief.care/api/graphql'
-// const url = "http://localhost:4001/api/graphql";
+const url = "http://localhost:4001/api/graphql";
 
 const query2 = `
 query comp{
@@ -105,7 +104,6 @@ const responseTrend = new Trend('response_time');
 //
 export default function () {
   // http.get('https://test.k6.io');
-  // const url = 'https://staging.lief.care/dashboard'
 
   const jar = http.cookieJar();
   jar.set(url, "next-auth.session-token", nexTauthCookie);
